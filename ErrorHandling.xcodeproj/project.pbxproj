@@ -13,6 +13,9 @@
 		F67DA50C1F94FB4300CF80CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F67DA50B1F94FB4300CF80CD /* Assets.xcassets */; };
 		F67DA50F1F94FB4300CF80CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67DA50D1F94FB4300CF80CD /* LaunchScreen.storyboard */; };
 		F67DA5171F94FD5000CF80CD /* fdb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F67DA5161F94FD5000CF80CD /* fdb.mp3 */; };
+		F67DA5191F95170100CF80CD /* JsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67DA5181F95170100CF80CD /* JsonViewController.swift */; };
+		F67DA51B1F9517A600CF80CD /* NewsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67DA51A1F9517A600CF80CD /* NewsDataSource.swift */; };
+		F67DA51E1F952BD600CF80CD /* NewsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67DA51D1F952BD600CF80CD /* NewsSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		F67DA50E1F94FB4300CF80CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F67DA5101F94FB4300CF80CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F67DA5161F94FD5000CF80CD /* fdb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fdb.mp3; sourceTree = "<group>"; };
+		F67DA5181F95170100CF80CD /* JsonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonViewController.swift; sourceTree = "<group>"; };
+		F67DA51A1F9517A600CF80CD /* NewsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDataSource.swift; sourceTree = "<group>"; };
+		F67DA51D1F952BD600CF80CD /* NewsSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		F67DA5031F94FB4300CF80CD /* ErrorHandling */ = {
 			isa = PBXGroup;
 			children = (
+				F67DA51C1F952BAD00CF80CD /* models */,
 				F67DA5161F94FD5000CF80CD /* fdb.mp3 */,
 				F67DA5041F94FB4300CF80CD /* AppDelegate.swift */,
 				F67DA5061F94FB4300CF80CD /* ViewController.swift */,
@@ -63,8 +70,18 @@
 				F67DA50B1F94FB4300CF80CD /* Assets.xcassets */,
 				F67DA50D1F94FB4300CF80CD /* LaunchScreen.storyboard */,
 				F67DA5101F94FB4300CF80CD /* Info.plist */,
+				F67DA5181F95170100CF80CD /* JsonViewController.swift */,
+				F67DA51A1F9517A600CF80CD /* NewsDataSource.swift */,
 			);
 			path = ErrorHandling;
+			sourceTree = "<group>";
+		};
+		F67DA51C1F952BAD00CF80CD /* models */ = {
+			isa = PBXGroup;
+			children = (
+				F67DA51D1F952BD600CF80CD /* NewsSource.swift */,
+			);
+			name = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +159,9 @@
 			files = (
 				F67DA5071F94FB4300CF80CD /* ViewController.swift in Sources */,
 				F67DA5051F94FB4300CF80CD /* AppDelegate.swift in Sources */,
+				F67DA51E1F952BD600CF80CD /* NewsSource.swift in Sources */,
+				F67DA5191F95170100CF80CD /* JsonViewController.swift in Sources */,
+				F67DA51B1F9517A600CF80CD /* NewsDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
