@@ -7,10 +7,45 @@
 //
 
 import UIKit
-//c554ee8ea96747189054b2a3b3f6c9fc
+//	https://newsapi.org/v1/articles?apikey=c554ee8ea96747189054b2a3b3f6c9fc&source=al-jazeera-english
 class NewsDataSource {
     static let session = URLSession.shared// URLSession(configuration: ...)
     
+    
+    static func getArticles(_ id:String, completionHandler: @escaping (Error?, [Article]?)->Void){
+        
+        guard let url = URL(string: "https://newsapi.org/v1/articles?apikey=c554ee8ea96747189054b2a3b3f6c9fc&source=\(id)") else{return}
+        
+        URLSession.shared.dataTask(with: url){
+            data, res, err in
+            guard let data = data else{return}
+            
+            guard let articlesJson = try?
+                JSONSerialization.jsonObject(with: data, options: []) as? JSON,
+            
+              let articleArr = articlesJson?["articles"] as? [JSON] else {
+                
+                  completionHandler(err, nil)
+                return}
+            
+            var result = [Article]()
+            
+            for item in articleArr {
+                //description
+                guard let desc = item["description"] as? String,
+                      let url = item["url"] as? String,
+                      let title = item["title"] as? String,
+                      let urlToImage = item["urlToImage"] as? String else {return}
+                
+                let article = Article(desc: desc, title: title, url: url, urlToImage: urlToImage)
+                result.append(article)
+            }
+            
+            DispatchQueue.main.async{
+                  completionHandler(nil, result)
+            }
+            }.resume()
+    }
     
     static func getData(completionHandler: @escaping ([NewsSource]?, Error?) -> Void) {
         guard let url = URL(string: "https://newsapi.org/v1/sources?language=en") else {return}
