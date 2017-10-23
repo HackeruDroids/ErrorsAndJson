@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F663B2371F9921F200DE74FB /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F663B2361F9921F200DE74FB /* NewsTableViewCell.swift */; };
+		F66FAFC11F9E3748004C83ED /* GrandCentralDispatchDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66FAFC01F9E3748004C83ED /* GrandCentralDispatchDemo.swift */; };
+		F66FAFC41F9E4774004C83ED /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66FAFC31F9E4774004C83ED /* Article.swift */; };
 		F67DA5051F94FB4300CF80CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67DA5041F94FB4300CF80CD /* AppDelegate.swift */; };
 		F67DA5071F94FB4300CF80CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67DA5061F94FB4300CF80CD /* ViewController.swift */; };
 		F67DA50A1F94FB4300CF80CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67DA5081F94FB4300CF80CD /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		F663B2361F9921F200DE74FB /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		F66FAFC01F9E3748004C83ED /* GrandCentralDispatchDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrandCentralDispatchDemo.swift; sourceTree = "<group>"; };
+		F66FAFC31F9E4774004C83ED /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		F67DA5011F94FB4300CF80CD /* ErrorHandling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ErrorHandling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F67DA5041F94FB4300CF80CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F67DA5061F94FB4300CF80CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F66FAFC21F9E4744004C83ED /* musicErrors */ = {
+			isa = PBXGroup;
+			children = (
+				F67DA5061F94FB4300CF80CD /* ViewController.swift */,
+				F67DA5161F94FD5000CF80CD /* fdb.mp3 */,
+			);
+			name = musicErrors;
+			sourceTree = "<group>";
+		};
 		F67DA4F81F94FB4300CF80CD = {
 			isa = PBXGroup;
 			children = (
@@ -64,16 +77,16 @@
 		F67DA5031F94FB4300CF80CD /* ErrorHandling */ = {
 			isa = PBXGroup;
 			children = (
+				F66FAFC21F9E4744004C83ED /* musicErrors */,
 				F67DA51C1F952BAD00CF80CD /* models */,
-				F67DA5161F94FD5000CF80CD /* fdb.mp3 */,
 				F67DA5041F94FB4300CF80CD /* AppDelegate.swift */,
-				F67DA5061F94FB4300CF80CD /* ViewController.swift */,
 				F67DA5081F94FB4300CF80CD /* Main.storyboard */,
 				F67DA50B1F94FB4300CF80CD /* Assets.xcassets */,
 				F67DA50D1F94FB4300CF80CD /* LaunchScreen.storyboard */,
 				F67DA5101F94FB4300CF80CD /* Info.plist */,
 				F67DA5181F95170100CF80CD /* JsonViewController.swift */,
 				F663B2361F9921F200DE74FB /* NewsTableViewCell.swift */,
+				F66FAFC01F9E3748004C83ED /* GrandCentralDispatchDemo.swift */,
 			);
 			path = ErrorHandling;
 			sourceTree = "<group>";
@@ -83,6 +96,7 @@
 			children = (
 				F67DA51D1F952BD600CF80CD /* NewsSource.swift */,
 				F67DA51A1F9517A600CF80CD /* NewsDataSource.swift */,
+				F66FAFC31F9E4774004C83ED /* Article.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -162,7 +176,9 @@
 			files = (
 				F67DA5071F94FB4300CF80CD /* ViewController.swift in Sources */,
 				F67DA5051F94FB4300CF80CD /* AppDelegate.swift in Sources */,
+				F66FAFC11F9E3748004C83ED /* GrandCentralDispatchDemo.swift in Sources */,
 				F663B2371F9921F200DE74FB /* NewsTableViewCell.swift in Sources */,
+				F66FAFC41F9E4774004C83ED /* Article.swift in Sources */,
 				F67DA51E1F952BD600CF80CD /* NewsSource.swift in Sources */,
 				F67DA5191F95170100CF80CD /* JsonViewController.swift in Sources */,
 				F67DA51B1F9517A600CF80CD /* NewsDataSource.swift in Sources */,
